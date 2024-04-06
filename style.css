@@ -225,6 +225,10 @@ footer {
   .bg-4 {
     top: 100px;
   }
+  .bg-3 {
+    width: 600px;
+    height: 600px;
+  }
 }
 
 @media (max-width: 768px) { 
