@@ -19,10 +19,14 @@ body {
   overflow-x: hidden;
 }
 
+.container {
+    overflow: hidden;
+}
+
 .top-bg{
     position: absolute;
     z-index: -1;
-    top: 0;
+    top: -100px;
     left: 0;
 }
 
@@ -102,11 +106,13 @@ img {
 /* Hero */
 #home,
 #service,
-.service-items,
+.services,
 .service-cards,
 #info {
   margin-top: 5rem;
 }
+
+
 
 .hero-text {
   /* font-family: Clash Grotesk Variable; */
@@ -260,5 +266,16 @@ footer {
   .caption {
     margin-left: 0;
   }
+
+  .bg-1,
+  .bg-5 {
+    width: 350px;
+    height: 350px;
+  }
+
+  .bg-2 {
+    display: none;
+  }
+
 
  }
