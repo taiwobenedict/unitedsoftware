@@ -1,0 +1,256 @@
+:root {
+    --color-1: #8a4e37;
+    --color-2: #2e537b;
+    --color-3: #0b1d5f;
+    --color-4: #340961;
+    --color-5: #063543;
+}
+
+@font-face {
+  font-family: "Clash";
+  src: url("font/ClashGrotesk-Variable.ttf"); /* Modern Browsers */
+}
+
+body {
+  background: #03091e;
+  color: #fff;
+  font-family: Clash;
+  font-weight: 400;
+  overflow-x: hidden;
+}
+
+.top-bg{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+
+.bg {
+    opacity: .8;
+    width: 400px;
+    height: 400px;
+    z-index: -1;
+}
+
+.bg-1 {
+    background-image: radial-gradient(closest-side, #8a4e37, #03091e);
+}
+.bg-2 {
+    background-image: radial-gradient(closest-side, #2e537b, #03091e);
+}
+.bg-3 {
+    background-image: radial-gradient(closest-side, #0b1d5f, #03091e);
+    position: absolute;
+    width: 900px;
+    height: 900px;
+    top: 0;
+    left: 20%;
+    opacity: 1;
+}
+.bg-4 {
+
+    background-image: radial-gradient(closest-side, #340961, #03091e);
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    top: -100px;
+    left: 20%;
+    opacity: 1;
+
+}
+.bg-5 {
+    background-image: radial-gradient(closest-side, #063543, #03091e);
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    top: -200px;
+    left: 0;
+    opacity: 1;
+
+}
+
+img {
+  width: 100%;
+}
+
+.logo {
+  max-width: 120px;
+}
+
+.nav-link,
+.btn {
+  color: #fff !important;
+  outline: none;
+}
+
+.btn:focus {
+  box-shadow: none;
+}
+
+.curve-border {
+  padding: 8px 16px 8px 16px;
+  border-radius: 15px 0px 15px 0px;
+  border: 1px solid #fff;
+}
+
+/* Hero */
+#home,
+#service,
+.service-items,
+.service-cards,
+#info {
+  margin-top: 5rem;
+}
+
+.hero-text {
+  /* font-family: Clash Grotesk Variable; */
+  font-size: 120px;
+  line-height: 1;
+}
+
+.text-2 {
+  padding-left: 100px;
+}
+
+.text-3 {
+  text-align: right;
+}
+
+.caption {
+  margin-top: 5rem;
+  margin-left: 5rem;
+  max-width: 400px;
+}
+
+/* Service */
+.service-text {
+  font-size: 45px;
+  line-height: 1.2;
+  text-align: justify;
+}
+
+.service-items {
+  list-style: none;
+  padding: 0;
+}
+
+.service-item {
+  font-size: 70px;
+}
+
+.service-cards {
+  min-height: 700px;
+}
+
+.service-card {
+  min-height: 400px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.card-text {
+  font-size: 28px;
+}
+
+.card-2 {
+  align-self: center;
+}
+
+.card-3 {
+  align-self: flex-end;
+}
+
+#info {
+  background: #000515;
+  padding-block: 5rem;
+}
+
+/* Footer */
+footer {
+  padding-top: 5.5rem;
+  padding-bottom: 3rem;
+}
+
+.input {
+  border: none;
+  outline: none;
+  color: #fff;
+}
+
+.footer {
+  padding-top: 2rem;
+}
+
+@media (max-width: 1200px) {
+    .hero-text {
+        font-size: 100px;
+    }
+ }
+
+@media (max-width: 992px) {
+    body {
+        font-size: 14px;
+    }
+  .container {
+    max-width: 1200px !important;
+  }
+
+  .hero-text {
+    font-size: 80px;
+  }
+  .service-text {
+    font-size: 35px;
+  }
+
+  .service-item {
+    font-size: 50px;
+  }
+
+  .service-card {
+    min-height: 300px;
+    max-width: 500px;
+    margin: auto;
+  }
+
+  .card-text {
+    font-size: 24px;
+  }
+  .text-2 {
+    padding-left: 3rem;
+  }
+
+  .bg-4 {
+    top: 100px;
+  }
+}
+
+@media (max-width: 768px) { 
+    .hero-text {
+    font-size: 60px;
+  }
+ }
+
+@media (max-width: 576px) {
+    .hero-text {
+    font-size: 40px;
+  }
+
+  .service-text {
+    font-size: 28px;
+  }
+  .service-item {
+    font-size: 35px;
+  }
+
+  .text-2 {
+    padding-left: 2rem;
+  }
+
+  .caption {
+    margin-left: 0;
+  }
+
+ }
