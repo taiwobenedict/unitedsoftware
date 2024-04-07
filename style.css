@@ -298,9 +298,12 @@ footer {
   }
 
   .bg-1,
+  .bg-2,
+  .bg-3,
+  .bg-4,
   .bg-5 {
-    width: 350px;
-    height: 350px;
+    width: 300px;
+    height: 300px;
   }
 
   .bg-2 {
