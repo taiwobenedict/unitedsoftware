@@ -1,4 +1,5 @@
 :root {
+  --pri: #03091E;
     --color-1: #8a4e37;
     --color-2: #2e537b;
     --color-3: #0b1d5f;
@@ -6,13 +7,15 @@
     --color-5: #063543;
 }
 
+
 @font-face {
   font-family: "Clash";
   src: url("font/ClashGrotesk-Variable.ttf"); /* Modern Browsers */
 }
 
 body {
-  background: #03091e;
+  top: 0px !important;
+  background: var(--pri);
   color: #fff;
   font-family: Clash;
   font-weight: 400;
@@ -33,19 +36,19 @@ body {
 
 .bg {
     opacity: .5;
-    width: 400px;
-    height: 400px;
+    width: 500px;
+    height: 500px;
     z-index: -1;
 }
 
 .bg-1 {
-    background-image: radial-gradient(closest-side, #8a4e37, #03091e);
+    background-image: radial-gradient(closest-side, #8a4e37, var(--pri));
 }
 .bg-2 {
-    background-image: radial-gradient(closest-side, #2e537b, #03091e);
+    background-image: radial-gradient(closest-side, #2e537b, var(--pri));
 }
 .bg-3 {
-    background-image: radial-gradient(closest-side, #0b1d5f, #03091e);
+    background-image: radial-gradient(closest-side, #09184f, var(--pri));
     position: absolute;
     width: 900px;
     height: 900px;
@@ -55,7 +58,7 @@ body {
 }
 .bg-4 {
 
-    background-image: radial-gradient(closest-side, #340961, #03091e);
+    background-image: radial-gradient(closest-side, #340961, var(--pri));
     position: absolute;
     width: 500px;
     height: 500px;
@@ -65,7 +68,7 @@ body {
 
 }
 .bg-5 {
-    background-image: radial-gradient(closest-side, #063543, #03091e);
+    background-image: radial-gradient(closest-side, #063543, var(--pri));
     position: absolute;
     width: 500px;
     height: 500px;
@@ -151,6 +154,11 @@ img {
 .service-item {
   font-size: 10vw;
   font-weight: 500;
+  line-height: 1.2;
+  transition: transform 0.3s, opacity 0.3s, filter 0.3s;
+  transform: scale(0.8);
+  opacity: 0.5;
+  filter: blur(3px);
 }
 
 .service-cards {
@@ -312,3 +320,61 @@ footer {
 
 
  }
+
+ /* For most browsers */
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* For Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+[id=":0.targetLanguage"] ~ span {
+    display: none;
+    color: transparent;
+    visibility: hidden;
+  }
+  
+  [id=":1.container"] {
+   display: none;
+  }
+  
+  .VIpgJd-ZVi9od-aZ2wEe-wOHMyf-ti6hGc {
+    display: none;
+  }
+  
+  
+  .goog-te-gadget .goog-te-combo {
+    padding: 0.5rem 1rem !important;
+    border-radius: 10px;
+    text-align: center;
+    width: fit-content;
+    background-color: transparent;
+    color: #fff;
+    line-height: 1.5;
+    border-color: #fff;
+    outline: none;
+    height: 40px;
+    padding: 8px 16px 8px 16px;
+    border-radius: 15px 0px 15px 0px;
+    border: 1px solid #fff;
+  }
+  .goog-te-gadget .goog-te-combo option {
+    color: #333;
+  }
+  
+  .VIpgJd-ZVi9od-ORHb-OEVmcd,
+  .jsx-437803386  {
+    display: none;
+  }
+  
+  div.eapps-widget {
+    position: fixed !important;
+    bottom: 0;
+    z-index: 2;
+  }
+  
