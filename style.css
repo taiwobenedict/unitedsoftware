@@ -129,6 +129,8 @@ img {
 }
 
 .caption {
+    font-size: 1rem !important;
+    mix-blend-mode: normal !important;
   margin-top: 5rem;
   margin-left: 5rem;
   max-width: 400px;
@@ -147,7 +149,7 @@ img {
 }
 
 .service-item {
-  font-size: 70px;
+  font-size: 100px;
 }
 
 .service-cards {
@@ -174,15 +176,32 @@ img {
 }
 
 #info {
-  background: #000515;
-  padding-block: 5rem;
+  background: url('images/img.png') center center/cover no-repeat fixed;
+  background-color: #000515;
 }
+
+#info .hero-text {
+    padding-top: 5rem;
+    font-weight: 500;
+    background: #000515;
+    mix-blend-mode: darken; 
+    position: relative;
+    z-index: 1;
+}
+
+.background {
+    background: #000515;
+    padding-bottom: 5rem;
+}
+
+
 
 /* Footer */
 footer {
   padding-top: 5.5rem;
   padding-bottom: 3rem;
 }
+
 
 .input {
   border: none;
@@ -197,6 +216,10 @@ footer {
 @media (max-width: 1200px) {
     .hero-text {
         font-size: 100px;
+    }
+
+    .bg-3 {
+        left: 0;
     }
  }
 
