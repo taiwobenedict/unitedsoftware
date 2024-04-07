@@ -18,7 +18,7 @@
 
     <!-- Navbar -->
     <header class="navbar-bg">
-        <div class="container">
+        <div class="container-fluid">
             <nav class="navbar navbar-expand-lg navbar-light w-100 align-items-center">
                 <a class="navbar-brand" href="#home">
                     <img src="images/logo.png" alt="logo" class="logo">
@@ -38,18 +38,61 @@
                     </div>
                 </div>
                 <div class="d-none d-lg-block">
-                    <button class="btn curve-border">Let's Build Together</button>
+                    <button type="button" class="btn curve-border" data-toggle="modal" data-target="#exampleModal">Let's Build Together</button>
                 </div>
             </nav>
         </div>
     </header>
+
+    <!-- Modal -->
+    <!-- Button trigger modal -->
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div class="form-group">
+                <label class="text-dark" for="name">Name:</label>
+                <input type="text" class="form-control" id="name">
+              </div>
+            <div class="form-group">
+                <label class="text-dark" for="email">Email:</label>
+                <input type="text" class="form-control" id="email">
+              </div>
+            <div class="form-group">
+                <label class="text-dark" for="number">Phone Number:</label>
+                <input type="text" class="form-control" id="number">
+              </div>
+            <div class="form-group">
+                <label class="text-dark" for="social">WhatsApp/Telegram:</label>
+                <input type="text" class="form-control" id="social">
+              </div>
+              <div class="form-group">
+                <label for="message" class="text-dark">Message: </label>
+                <textarea class="form-control" id="message" rows="5"></textarea>
+              </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
     <div id="home" class="position-relative">
         <div class="d-flex top-bg">
             <div class="bg bg-1"></div>
             <div class="bg bg-2"></div>
         </div>
-        <div class="container">
+        <div class="container-fluid">
             <div class="content">
                 <div class="hero-text">
                     <p class="text-1">CREATIVE</p>
@@ -62,7 +105,7 @@
     </div>
 
     <div id="service">
-        <div class="container position-relative">
+        <div class="container-fluid position-relative">
             <div class="row">
                 <div class="col-md-4"></div>
                 <div class="col-md-8"><p class="service-text pl-md-4">we develop crypto-related websites and Dapps, we existing on the edge of blockchain technology, providing consulting and development services to our customers</p></div>
@@ -125,22 +168,22 @@
 
     <div id="info" class="position-relative">
         <div class="hero-text pb-0">
-            <div class="container">
+            <div class="container-fluid">
                 <p class="text-1">LET'S START</p>
                 <p class="text-2">BUILDING</p>
-                <p class="text-3">FOR YOUR IDEAS</p>
+                <p class="text-3 mb-0">FOR YOUR IDEAS</p>
             </div>
         </div>
         <div class="background">
-            <div class="container">
-                <p class="caption">Lorem ipsum dolor sit amet consectetur. Erat adipiscing nunc elementum sollicitudin nibh faucibus sed enim faucibus. Dignissim ultricies mi senectus neque morbi mauris gravida venenatis. Eleifend semper nisi sed ac. Congue feugiat eros id donec velit pharetra purus.</p>
+            <div class="container-fluid">
+                <p class="caption mt-0 pt-5">Lorem ipsum dolor sit amet consectetur. Erat adipiscing nunc elementum sollicitudin nibh faucibus sed enim faucibus. Dignissim ultricies mi senectus neque morbi mauris gravida venenatis. Eleifend semper nisi sed ac. Congue feugiat eros id donec velit pharetra purus.</p>
             </div>
         </div>
         <div class="bg bg-5"></div>
     </div>
         
     <footer>
-        <div class="container">
+        <div class="container-fluid">
             <div class="footer border-top">
                 <div class="row">
                     <div class="col-md-4 mt-3">
@@ -154,28 +197,20 @@
                         <nav class="nav d-block">
                             <a class="nav-link pl-0" href="#">CONTACT</a>
                             <a class="nav-link pl-0" href="#">SUPPORT</a>
-                            <a class="nav-link pl-0" href="#">TERMS OF USE</a>
-                            <a class="nav-link pl-0">COOKIE POLICY</a>
+                            <a class="nav-link pl-0" href="https://cambiumway.com/terms-conditions/">TERMS OF USE</a>
+                            <a class="nav-link pl-0" href="https://cambiumway.com/privacy-policy/">COOKIE POLICY</a>
                           </nav>
                     </div>
                     <div class="col-md-2 mt-3">
                         <p class="mb-4 text-muted">Follow Us</p>
             
                         <nav class="nav d-block">
-                            <a class="nav-link pl-0" href="#">INSTAGRAM</a>
+                            <a class="nav-link pl-0" href="">INSTAGRAM</a>
                             <a class="nav-link pl-0" href="https://twitter.com/Unitedsoft_ch" target="_blank">TWITTER</a>
-                            <a class="nav-link pl-0" href="#">TIKTOK</a>
-                            <a class="nav-link pl-0">YOUTUBE</a>
                           </nav>
                     </div>
-                    <div class="col-md-4 mt-3">
-                        <p class="mb-4 text-muted">Follow Us</p>
-                        <p><span class="mr-3">Email:</span> contact@softwareunited.ch</p>
-
-                        <div class="form curve-border d-flex justify-content-between py-0 pr-0">
-                            <input type="text" class="input bg-transparent w-100">
-                            <button class="btn curve-border">SUBMIT</button>
-                        </div>
+                    <div class="col-md-4 pt-2">
+                        <a class="nav-link pl-0" href="#"><span class="mr-3">Email:</span> contact@softwareunited.ch</a>
                     </div>
                 </div>
             </div>

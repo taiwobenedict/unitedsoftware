@@ -5,7 +5,7 @@ document.addEventListener('scroll', function() {
     textList.forEach(function(text) {
       var textPosition = text.getBoundingClientRect();
       var distanceFromMiddle = Math.abs(textPosition.top + textPosition.height / 2 - middleOfViewport);
-      var blurAmount = distanceFromMiddle / middleOfViewport * 10; 
+      var blurAmount = distanceFromMiddle / middleOfViewport * 9; 
       var opacity = 1 - (distanceFromMiddle / middleOfViewport);
   
       text.style.filter = 'blur(' + blurAmount + 'px)';
