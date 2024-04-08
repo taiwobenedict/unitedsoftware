@@ -225,6 +225,9 @@ footer {
   .container-fluid {
     max-width: 1800px !important;
   }
+  .container {
+    max-width: 1350px !important;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -392,3 +395,4 @@ input[type='number'] {
 .nav-link:active {
   transform: scale(1.1);
 }
+

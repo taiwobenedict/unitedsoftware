@@ -59,10 +59,6 @@ function removeLanguage () {
 // Remove language
 window.onload = function () {
 
-  setTimeout(() => {
-   removeLanguage()
-  }, 3000);
-
   setInterval(() => {
     removeLanguage()
   }, 1000);
