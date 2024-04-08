@@ -52,8 +52,12 @@
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <div class="modal-header d-flex justify-content-between align-items-center">
+            <a class="navbar-brand" href="#home" style="max-width: 100px;">
+                <img src="images/darklogo.PNG" alt="logo" class="logo">
+            </a>
+
+            <h3 class="text-dark text-center w-100">CONTACT US</h3>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -71,9 +75,12 @@
                 <label class="text-dark" for="number">Phone Number:</label>
                 <input type="text" class="form-control" id="number">
               </div>
-            <div class="form-group">
-                <label class="text-dark" for="social">WhatsApp/Telegram:</label>
-                <input type="text" class="form-control" id="social">
+              <div class="form-group">
+                <label for="exampleFormControlSelect1"></label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>WhatsApp</option>
+                  <option>Telegram</option>
+                </select>
               </div>
               <div class="form-group">
                 <label for="message" class="text-dark">Message: </label>
@@ -81,7 +88,7 @@
               </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary">Submit</button>
+          <button type="button" class="btn modal-btn">Submit</button>
         </div>
       </div>
     </div>
@@ -99,7 +106,9 @@
                     <p class="text-2">WEB3 SOLUTIONS</p>
                     <p class="text-3">FOR YOUR IDEAS</p>
                 </div>
-                <p class="caption">United Software is here to help you follow your dream and create something extraordinary</p>
+                <div class="container">
+                    <p class="caption">United Software is here to help you follow your dream and create something extraordinary</p>
+                </div>
             </div>
         </div>
     </div>
@@ -176,7 +185,9 @@
         </div>
         <div class="background">
             <div class="container-fluid">
-                <p class="caption mt-0 pt-5">Lorem ipsum dolor sit amet consectetur. Erat adipiscing nunc elementum sollicitudin nibh faucibus sed enim faucibus. Dignissim ultricies mi senectus neque morbi mauris gravida venenatis. Eleifend semper nisi sed ac. Congue feugiat eros id donec velit pharetra purus.</p>
+                <div class="container">
+                    <p class="caption mt-0 pt-5">Lorem ipsum dolor sit amet consectetur. Erat adipiscing nunc elementum sollicitudin nibh faucibus sed enim faucibus. Dignissim ultricies mi senectus neque morbi mauris gravida venenatis. Eleifend semper nisi sed ac. Congue feugiat eros id donec velit pharetra purus.</p>
+                </div>
             </div>
         </div>
         <div class="bg bg-5"></div>
@@ -184,41 +195,46 @@
         
     <footer>
         <div class="container-fluid">
-            <div class="footer border-top">
-                <div class="row">
-                    <div class="col-md-4 mt-3">
-                        <div class="logo mb-4">
-                            <img src="images/logo.png" alt="">
-                        </div>
-                        <a class="nav-link pl-0"><span class="mr-3">Email:</span> contact@softwareunited.ch</a>
-                        <a class="nav-link pl-0">FIDUCIAIRE ZUCCHERO SA</a>
-                        <a class="nav-link pl-0"><span class="mr-3">Rue Adrien-LACHENAL 26</a>
-                        <a class="nav-link pl-0"><span class="mr-3">1207 Genève</a>
-                        <a class="nav-link pl-0"><span class="mr-3">Copyright &copy; 2024 unitedsoftware</a>
-
+            <div class="footer border-top w-100">
+                <div class="container">
+                    <div class="logo mb-4">
+                        <img src="images/logo.png" alt="">
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 mt-3">
                         
+                            <a class="nav-link pl-0"><span class="mr-3">Email:</span> contact@softwareunited.ch</a>
+                            <a class="nav-link pl-0">FIDUCIAIRE ZUCCHERO SA</a>
+                            <a class="nav-link pl-0"><span class="mr-3">Rue Adrien-LACHENAL 26</a>
+                            <a class="nav-link pl-0"><span class="mr-3">1207 Genève</a>
+                            <a class="nav-link pl-0"><span class="mr-3">Copyright &copy; 2024 unitedsoftware</a>
+    
+                            
+                        </div>
+                        <div class="col-md-4 mt-3">
+                            <div class="ml-md-auto" style="width: fit-content;">
+                                <p class="mb-4 text-muted ">Support</p>
+                                <nav class="nav d-block">
+                                    <button type="button" class="nav-link btn pl-0"  data-toggle="modal" data-target="#exampleModal">CONTACT</button>
+                                    <a class="nav-link pl-0" href="#">SUPPORT</a>
+                                    <a class="nav-link pl-0" href="https://cambiumway.com/terms-conditions/">TERMS OF USE</a>
+                                    <a class="nav-link pl-0" href="https://cambiumway.com/privacy-policy/">COOKIE POLICY</a>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mt-3">
+                            <div class="ml-md-auto" style="width: fit-content;">
+                                <p class="mb-4 text-muted">Follow Us</p>
+                                <nav class="nav d-block">
+                                    <a class="nav-link pl-0" href="">INSTAGRAM</a>
+                                    <a class="nav-link pl-0" href="https://twitter.com/Unitedsoft_ch" target="_blank">TWITTER</a>
+                                  </nav>
+                            </div>
+                        </div>
+                        <!-- <div class="col-md-4 pt-2">
+                            <a class="nav-link pl-0" href="#"><span class="mr-3">Email:</span> contact@softwareunited.ch</a>
+                        </div> -->
                     </div>
-                    <div class="col-md-4 mt-3">
-                        <p class="mb-4 text-muted ">Support</p>
-            
-                        <nav class="nav d-block">
-                            <button type="button" class="nav-link btn pl-0"  data-toggle="modal" data-target="#exampleModal">CONTACT</button>
-                            <a class="nav-link pl-0" href="#">SUPPORT</a>
-                            <a class="nav-link pl-0" href="https://cambiumway.com/terms-conditions/">TERMS OF USE</a>
-                            <a class="nav-link pl-0" href="https://cambiumway.com/privacy-policy/">COOKIE POLICY</a>
-                          </nav>
-                    </div>
-                    <div class="col-md-4 mt-3">
-                        <p class="mb-4 text-muted">Follow Us</p>
-            
-                        <nav class="nav d-block">
-                            <a class="nav-link pl-0" href="">INSTAGRAM</a>
-                            <a class="nav-link pl-0" href="https://twitter.com/Unitedsoft_ch" target="_blank">TWITTER</a>
-                          </nav>
-                    </div>
-                    <!-- <div class="col-md-4 pt-2">
-                        <a class="nav-link pl-0" href="#"><span class="mr-3">Email:</span> contact@softwareunited.ch</a>
-                    </div> -->
                 </div>
             </div>
         </div>

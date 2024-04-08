@@ -132,10 +132,9 @@ img {
 }
 
 .caption {
-    font-size: 1rem !important;
-    mix-blend-mode: normal !important;
+  font-size: 1rem !important;
+  mix-blend-mode: normal !important;
   margin-top: 5rem;
-  margin-left: 5rem;
   max-width: 400px;
 }
 
@@ -378,3 +377,18 @@ input[type='number'] {
     z-index: 2;
   }
   
+.modal-btn {
+  background-color: var(--pri);
+  color: #fff;
+}
+
+.btn:hover,
+.nav-link {
+  opacity: 0.8;
+  transition: 0.4s;
+}
+
+.btn:active,
+.nav-link:active {
+  transform: scale(1.1);
+}
