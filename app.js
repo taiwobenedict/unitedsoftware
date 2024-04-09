@@ -1,3 +1,8 @@
+
+const cookies = document.querySelector(".cookies")
+const cookieBtns = document.querySelectorAll(".cookie-btn")
+
+
 let requestId;
 
 function updateTexts() {
@@ -49,7 +54,6 @@ function removeLanguage () {
   langs.forEach(function(lang){
     if( !nomLang.includes(lang.value)) {
      lang.remove()
-      console.log(lang.value, lang.innerText)
     }
 
   })
@@ -58,6 +62,13 @@ function removeLanguage () {
 
 // Remove language
 window.onload = function () {
+  let isSaved = localStorage.getItem('cookies') || null
+
+  if (!isSaved) {
+      setTimeout(function () {
+          cookies.classList.add('show-cookies')
+      }, 2000)
+  }
 
   setInterval(() => {
     removeLanguage()
@@ -66,5 +77,14 @@ window.onload = function () {
 
 
 
+cookieBtns.forEach(function(cookieBtn) {
+    cookieBtn.addEventListener("click", function () {
+        setTimeout(function () {
+            cookies.classList.remove('show-cookies')
+        }, 1000)
 
+        localStorage.setItem("cookies", true)
+    } )
+    console.log("hello")
 
+})

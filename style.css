@@ -396,3 +396,27 @@ input[type='number'] {
   transform: scale(1.1);
 }
 
+.cookies {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  transform: translateY(150px);
+  transition: 0.5s;
+}
+
+.show-cookies {
+transform: translateY(0px);
+}
+
+.page {
+  margin-top: 7rem !important;
+}
+
+.page h1 {
+   font-size: 42px;
+}
+
+.page p {
+  color: #b3b3b3;
+}
