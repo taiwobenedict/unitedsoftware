@@ -85,6 +85,5 @@ cookieBtns.forEach(function(cookieBtn) {
 
         localStorage.setItem("cookies", true)
     } )
-    console.log("hello")
 
 })

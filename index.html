@@ -1,21 +1,25 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <title>UNITED SOFTWARE</title>
 
 
-  <body>
-  
+<body>
+
 
     <!-- Navbar -->
     <header class="navbar-bg">
@@ -24,7 +28,8 @@
                 <a class="navbar-brand" href="#home">
                     <img src="images/logo.png" alt="logo" class="logo">
                 </a>
-                <button class="navbar-toggler border-none" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup">
+                <button class="navbar-toggler border-none" type="button" data-toggle="collapse"
+                    data-target="#navbarNavAltMarkup">
                     <span class="toggler text-white"><i class="fa fa-bars"></i></span>
                 </button>
                 <div class="collapse navbar-collapse transition" id="navbarNavAltMarkup">
@@ -32,13 +37,15 @@
                         <a class="nav-link active" href="#home">Home</a>
                         <a class="nav-link" href="#about">About</a>
                     </div>
-                    <div id="google_translate_element"  class="mr-3"></div>
+                    <div id="google_translate_element" class="mr-3"></div>
                     <div class="d-lg-none d-block">
-                        <button class="btn curve-border" data-toggle="modal" data-target="#exampleModal">Let's Build Together</button>
+                        <button class="btn curve-border" data-toggle="modal" data-target="#exampleModal">Let's Build
+                            Together</button>
                     </div>
                 </div>
                 <div class="d-none d-lg-block">
-                    <button type="button" class="btn curve-border" data-toggle="modal" data-target="#exampleModal">Let's Build Together</button>
+                    <button type="button" class="btn curve-border" data-toggle="modal" data-target="#exampleModal">Let's
+                        Build Together</button>
                 </div>
             </nav>
         </div>
@@ -47,51 +54,51 @@
     <!-- Modal -->
     <!-- Button trigger modal -->
 
-  
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header d-flex justify-content-between align-items-center">
-            <a class="navbar-brand" href="#home" style="max-width: 100px;">
-                <img src="images/darklogo.PNG" alt="logo" class="logo">
-            </a>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
+
+    <!-- Modal -->
+    <d class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <form class="modal-content" id="myForm">
+                <div class="modal-header d-flex justify-content-between align-items-center">
+                    <a class="navbar-brand" href="#home" style="max-width: 100px;">
+                        <img src="images/darklogo.PNG" alt="logo" class="logo">
+                    </a>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label class="text-dark" for="name">Name:</label>
+                        <input type="text" class="form-control" name="name" id="name">
+                    </div>
+                    <div class="form-group">
+                        <label class="text-dark" for="email">Email:</label>
+                        <input type="text" class="form-control" name="email" id="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="social"></label>
+                        <select class="form-control" id="social" name="social">
+                            <option>WhatsApp</option>
+                            <option>Telegram</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="text-dark" for="number">Phone Number:</label>
+                        <input type="text" class="form-control" name="number" id="number">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message" class="text-dark">Message: </label>
+                        <textarea class="form-control" id="message" name="message" rows="5"></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" id="submit" class="btn modal-btn">Submit</button>
+                </div>
+            </form>
         </div>
-        <div class="modal-body">
-            <div class="form-group">
-                <label class="text-dark" for="name">Name:</label>
-                <input type="text" class="form-control" id="name">
-              </div>
-            <div class="form-group">
-                <label class="text-dark" for="email">Email:</label>
-                <input type="text" class="form-control" id="email">
-              </div>
-            <div class="form-group">
-                <label for="exampleFormControlSelect1"></label>
-                <select class="form-control" id="exampleFormControlSelect1">
-                  <option>WhatsApp</option>
-                  <option>Telegram</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label class="text-dark" for="number">Phone Number:</label>
-                <input type="text" class="form-control" id="number">
-            </div>
-            
-              <div class="form-group">
-                <label for="message" class="text-dark">Message: </label>
-                <textarea class="form-control" id="message" rows="5"></textarea>
-              </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn modal-btn">Submit</button>
-        </div>
-      </div>
-    </div>
-  </div>
+    </d>
 
     <div id="home" class="position-relative">
         <div class="d-flex top-bg">
@@ -106,7 +113,8 @@
                     <p class="text-3">FOR YOUR IDEAS</p>
                 </div>
                 <div class="container">
-                    <p class="caption">United Software is here to help you follow your dream and create something extraordinary</p>
+                    <p class="caption">United Software is here to help you follow your dream and create something
+                        extraordinary</p>
                 </div>
             </div>
         </div>
@@ -116,7 +124,11 @@
         <div class="container-fluid position-relative">
             <div class="row">
                 <div class="col-md-4"></div>
-                <div class="col-md-8"><p class="service-text pl-md-4">we develop crypto-related websites and Dapps, we existing on the edge of blockchain technology, providing consulting and development services to our customers</p></div>
+                <div class="col-md-8">
+                    <p class="service-text pl-md-4">we develop crypto-related websites and Dapps, we existing on the
+                        edge of blockchain technology, providing consulting and development services to our customers
+                    </p>
+                </div>
             </div>
 
             <div class="row services ">
@@ -124,7 +136,7 @@
                     <p class="mb-4">[ABOUT]</p>
                 </div>
                 <div class="col-md-9">
-                    
+
                     <ul class="service-items pl-md-4 position-relative">
                         <li class="service-item" id="test">BLOCKCHAIN</li>
                         <li class="service-item">CRYPTO WEB</li>
@@ -142,8 +154,14 @@
                     <div class="service-card curve-border">
                         <h4>01</h4>
                         <div class="card-content">
-                            <p class="card-text">CONSULTING IN THE FIELD OF  BLOCKCHAIN TECHOLOGIES AND IMPLEMENTATION</p>
-                            <p>.Our service provides expert guidance and strategic implementation of blockchain technology for businesses across various industries. We specialize in tailoring blockchain solutions to improve transparency, enhance security and increase efficiency for your operations. Our team of experts will work closely with you from concept through execution, ensuring your blockchain integration is seamless and aligns perfectly with your organizational goals.</p>
+                            <p class="card-text">CONSULTING IN THE FIELD OF BLOCKCHAIN TECHOLOGIES AND IMPLEMENTATION
+                            </p>
+                            <p>.Our service provides expert guidance and strategic implementation of blockchain
+                                technology for businesses across various industries. We specialize in tailoring
+                                blockchain solutions to improve transparency, enhance security and increase efficiency
+                                for your operations. Our team of experts will work closely with you from concept through
+                                execution, ensuring your blockchain integration is seamless and aligns perfectly with
+                                your organizational goals.</p>
                         </div>
 
                     </div>
@@ -153,7 +171,12 @@
                         <h4>02</h4>
                         <div class="card-content">
                             <p class="card-text">WEB3 DEVELOPMENT</p>
-                            <p>We specialize in building decentralized applications (DApps) that operate on blockchain technology, offering enhanced security, increased transparency, and greater user autonomy. Our expertise covers everything from smart contracts to tokenization and decentralized finance (DeFi) solutions. We provide end-to-end development, from initial concept and design through to deployment and maintenance, ensuring your transition into the Web3 space is smooth and successful.</p>
+                            <p>We specialize in building decentralized applications (DApps) that operate on blockchain
+                                technology, offering enhanced security, increased transparency, and greater user
+                                autonomy. Our expertise covers everything from smart contracts to tokenization and
+                                decentralized finance (DeFi) solutions. We provide end-to-end development, from initial
+                                concept and design through to deployment and maintenance, ensuring your transition into
+                                the Web3 space is smooth and successful.</p>
                         </div>
 
                     </div>
@@ -163,7 +186,12 @@
                         <h4>03</h4>
                         <div class="card-content">
                             <p class="card-text">CRYPTO RELATED WEBSITES</p>
-                            <p>We specialize in designing and developing crypto-related websites that cater to the dynamic needs of the digital currency market Our team is equipped with the latest technological tools and deep industry knowledge to ensure your website is secure, user-friendly, and fully optimized for engaging users in the crypto space. Whether you're launching a new crypto startup or expanding your existing digital footprint, our tailored web development solutions will help you lead in a rapidly evolving market.</p>
+                            <p>We specialize in designing and developing crypto-related websites that cater to the
+                                dynamic needs of the digital currency market Our team is equipped with the latest
+                                technological tools and deep industry knowledge to ensure your website is secure,
+                                user-friendly, and fully optimized for engaging users in the crypto space. Whether
+                                you're launching a new crypto startup or expanding your existing digital footprint, our
+                                tailored web development solutions will help you lead in a rapidly evolving market.</p>
                         </div>
 
                     </div>
@@ -184,13 +212,16 @@
         <div class="background">
             <div class="container-fluid">
                 <div class="container">
-                    <p class="caption mt-0 pt-5">Let's continue to push the boundaries of what's possible, innovate with purpose, and lead with creativity. Together, we are not just building software; we are shaping the future. Let's make every project count and prove that through collaboration and passion, there is no limit to what we can achieve.</p>
+                    <p class="caption mt-0 pt-5">Let's continue to push the boundaries of what's possible, innovate with
+                        purpose, and lead with creativity. Together, we are not just building software; we are shaping
+                        the future. Let's make every project count and prove that through collaboration and passion,
+                        there is no limit to what we can achieve.</p>
                 </div>
             </div>
         </div>
         <div class="bg bg-5"></div>
     </div>
-        
+
     <footer>
         <div class="container-fluid">
             <div class="footer border-top w-100">
@@ -200,20 +231,21 @@
                     </div>
                     <div class="row">
                         <div class="col-md-6">
-                        
+
                             <a class="nav-link pl-0">contact@softwareunited.ch</a>
                             <a class="nav-link pl-0">Rue Adrien-LACHENAL 26</a>
                             <a class="nav-link pl-0">1207 Genève</a>
                             <a class="nav-link pl-0">Copyright &copy; 2024 unitedsoftware</a>
-    
-                            
+
+
                         </div>
                         <div class="col-md-6">
                             <div class="d-flex ml-md-auto" style="width: fit-content;">
                                 <div class="mr-5">
                                     <p class="mb-4 text-muted ">Support</p>
                                     <nav class="nav d-block">
-                                        <button type="button" class="nav-link btn pl-0"  data-toggle="modal" data-target="#exampleModal">CONTACT</button>
+                                        <button type="button" class="nav-link btn pl-0" data-toggle="modal"
+                                            data-target="#exampleModal">CONTACT</button>
                                         <a class="nav-link pl-0" href="terms.html">TERMS OF USE</a>
                                         <a class="nav-link pl-0" href="policy.html">COOKIE POLICY</a>
                                     </nav>
@@ -222,8 +254,9 @@
                                     <p class="mb-4 text-muted">Follow Us</p>
                                     <nav class="nav d-block">
                                         <a class="nav-link pl-0" href="">INSTAGRAM</a>
-                                        <a class="nav-link pl-0" href="https://twitter.com/Unitedsoft_ch" target="_blank">TWITTER</a>
-                                      </nav>
+                                        <a class="nav-link pl-0" href="https://twitter.com/Unitedsoft_ch"
+                                            target="_blank">TWITTER</a>
+                                    </nav>
                                 </div>
                             </div>
                         </div>
@@ -236,12 +269,13 @@
         </div>
     </footer>
 
-    
+
     <div class="cookies bg-dark py-3 px-2">
         <div class="container">
             <div class="row">
                 <div class="col-md-8 d-flex justify-content-center align-items-center">
-                    <p class="m-0 text-center">We use cookie to improve your experience on our site. By using our site you consent cookies. <a href="policy.html" class="ml-3">Learn More</a></p>
+                    <p class="m-0 text-center">We use cookie to improve your experience on our site. By using our site
+                        you consent cookies. <a href="policy.html" class="ml-3">Learn More</a></p>
                 </div>
                 <div class="col-md-4">
                     <div class="d-flex align-items-center justify-content-center">
@@ -253,15 +287,19 @@
         </div>
     </div>
 
-    
 
-  
+
+
 
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
     <script src="app.js"></script>
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
@@ -270,17 +308,35 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
     -->
     <script type="text/javascript">
-      function googleTranslateElementInit() {
-        new google.translate.TranslateElement(
-          { pageLanguage: "en" },
-          "google_translate_element"
-        );
-        document.querySelector(`[id=":0.targetLanguage"]`).nextSibling.remove();
-      }
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                { pageLanguage: "en" },
+                "google_translate_element"
+            );
+            document.querySelector(`[id=":0.targetLanguage"]`).nextSibling.remove();
+        }
     </script>
-    <script
-      type="text/javascript"
-      src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
-    ></script>
-  </body>
+    <script type="text/javascript"
+        src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        const submit = document.getElementById("submit")
+        submit.addEventListener("click", function(e) {
+
+            emailjs.init("acBrd7ZWSNYl7cQ_x");
+            emailjs.sendForm('service_czupqle', 'template_qamfs1j', '#myForm', )
+                .then(function (response) {
+                    console.log('SUCCESS!', response.status, response.text);
+                }, function (error) {
+                    console.log('FAILED...', error);
+                });
+        })
+
+
+    </script>
+</body>
+
 </html>
