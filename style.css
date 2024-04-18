@@ -420,3 +420,17 @@ transform: translateY(0px);
 .page p {
   color: #b3b3b3;
 }
+
+.alert {
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: none;
+  z-index: 10000;
+}
+
+.show-alert {
+ display: block;
+}
