@@ -297,6 +297,9 @@ footer {
 
 @media (max-width: 576px) {
 
+  .hero-text {
+    font: 50px;
+  }
 
   .service-text {
     font-size: 28px;
