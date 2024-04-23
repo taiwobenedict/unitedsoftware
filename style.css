@@ -283,16 +283,13 @@ footer {
 
 @media (max-width: 768px) { 
     .hero-text {
-    font-size: 60px;
+    font-size: 45px;
   }
 
  }
 
 @media (max-width: 576px) {
 
-  .hero-text {
-    font: 40px;
-  }
 
   .service-text {
     font-size: 28px;
