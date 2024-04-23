@@ -88,8 +88,3 @@ cookieBtns.forEach(function(cookieBtn) {
 
 })
 
-setTimeout(() => {
-  document.querySelectorAll('.alert').forEach(function(alert){
-    alert.classList.remove('show-alert')
-  })
-}, 3000);

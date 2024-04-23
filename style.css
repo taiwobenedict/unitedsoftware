@@ -288,9 +288,7 @@ footer {
  }
 
 @media (max-width: 576px) {
-    .hero-text {
-    font-size: 40px;
-  }
+
 
   .service-text {
     font-size: 28px;
@@ -305,6 +303,7 @@ footer {
 
   .caption {
     margin-left: 0;
+    font-size: 1.3rem !important;
   }
 
   .bg-1,
