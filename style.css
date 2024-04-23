@@ -107,7 +107,7 @@ img {
 }
 
 /* Hero */
-#home,
+
 #service,
 .services,
 .service-cards,
@@ -116,7 +116,7 @@ img {
 }
 
 #home {
-  min-height: 65vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -290,6 +290,10 @@ footer {
 @media (max-width: 768px) { 
     .hero-text {
     font-size: 60px;
+  }
+
+  #home {
+    min-height: 65vh;
   }
  }
 
