@@ -300,7 +300,8 @@ footer {
 
 @media (max-width: 576px) {
     .hero-text {
-    font-size: 42px;
+    font-size: 52px;
+    text-align: left;
   }
 
   .service-text {
@@ -311,11 +312,12 @@ footer {
   }
 
   .text-2 {
-    padding-left: 2rem;
+    padding-left: 0rem;
   }
 
   .caption {
     margin-left: 0;
+    font-size: initial;
   }
 
   .bg-1,
